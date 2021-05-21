@@ -56,5 +56,9 @@
      </div>
      <div class="button">
       <input type="submit" value="Register">
-   </div>
-</form>
+    </div>
+  </form>
+ </div>
+ 
+ </body>
+ </html>
