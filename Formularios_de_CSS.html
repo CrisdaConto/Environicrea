@@ -1,47 +1,49 @@
 <!DOCTYPE html>
 <!-- Designined by  CodingLab - youtube.com/codinglabyt -->
-<html lang="en" dir="ltr">
+<html lang="es">
   <head>
     <meta charset="UTF-8">
     <title> Formularios de CSS creado por Environicrea </title>
     <link rel="stylesheet" href="style.css">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" href="Logo_Cristhudios.ico">
   </head>
 <body>
    <div class="container">
-    <div class="title">Registo</div>
-    <form action="#"></form>
+    <div class="title"><h1>Formularios</h1></div>
+    <div class="titulo"><h2>Registro</h2></div>
+    <form action="Registro_Forms.html">
       <div class="user-details">
         <div class="input-box">
           <span class="details">Completar el nombre</span>
-          <input type="text" placeholder="Escribe su nombre" required>
+          <input type="text" placeholder="Escriba su nombre" required>
         </div>
         <div class="input-box">
           <span class="details">Nombre del usuario</span>
-          <input type="text" placeholder="Escribe su nombre de usuario" required>
+          <input type="text" placeholder="Escriba su nombre de usuario" required>
         </div>
         <div class="input-box">
           <span class="details">Correo electrónico</span>
-          <input type="text" placeholder="Escribe su correo electrónico" required>
+          <input type="email" placeholder="Escriba su correo electrónico" required>
         </div>
         <div class="input-box">
           <span class="details">Número de teléfono móvil</span>
-          <input type="text" placeholder="Escribe su teléfono móvil" required>
+          <input type="number" placeholder="Escriba su teléfono móvil" required>
         </div>
         <div class="input-box">
           <span class="details">Contraseña</span>
-          <input type="text" placeholder="Escribe su contraseña" required>
+          <input type="text" placeholder="Escriba su contraseña" required>
         </div>
         <div class="input-box">
           <span class="details">Confirma la contraseña</span>
-          <input type="text" placeholder="Reescribe su contraseña" required>
+          <input type="text" placeholder="Reescriba su contraseña" required>
         </div>
     </div>
     <div class="gender-details">
-      <input type="radio" name="gender" id="dot-1">
-      <input type="radio" name="gender" id="dot-2">
-      <input type="radio" name="gender" id="dot-3">
-      <span class="gender-title">Género</span>
+        <input type="radio" name="gender" id="dot-1" required>
+        <input type="radio" name="gender" id="dot-2" required>
+        <input type="radio" name="gender" id="dot-3" required>
+      <span class="gender-title"><h3>Género</h3></span>
       <div class="category">
         <label for="dot-1">
           <span class="dot one"></span>
@@ -55,13 +57,11 @@
           <span class="dot three"></span>
           <span class="gender">Prefiere no decir</span>
          </label>
-       </div>
      </div>
-     <div class="button">
-      <input type="submit" value="Register">
     </div>
+     <div class="button">
+      <input type="submit" value="Registrar">
   </form>
- </div>
- 
+  </div>
  </body>
  </html>
