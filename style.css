@@ -21,19 +21,33 @@ body{
   border-radius: 5px;
 }
 .container .title{
-  font-style: 25px;
-  font-weight: 500;
-  position: relative;
-}
+    font-style: 25px;
+    font-weight: 500;
+    position: relative;
+  }
+  .container .titulo{
+    font-style: 25px;
+    font-weight: 500;
+    position: relative;
+  }
 .container .title::before{
   content: '';
   position: absolute;
   left: 0;
   bottom: 0;
   height: 3px;
-  width: 30px;
+  width: 100%;
   background: linear-gradient(135deg, #71b7e6, #9b59b6);
 }
+.container .titulo::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  }
 .container form .user-details{
   display: flex;
   flex-wrap: wrap;
@@ -41,15 +55,17 @@ body{
   margin: 20px 0 12px 0;
 }
 form .user-details .input-box{
+    display: inline-block;
   margin-bottom: 15px;
   width: calc(100% / 2 - 20px);
 }
 .user-details .input-box details{
-  display: block;
+    height: 60px;
   font-weight: 500;
   margin-bottom: 5px;
+  width: 100%;
 }
-.user-details .input-box inpyt{
+.user-details .input-box input{
   height: 45px;
   width: 100%;
   outline: none;
@@ -70,7 +86,7 @@ form .gender-details .gender-title{
 }
 form .gender-details .category{
   display: flex;
-  width: 80%;
+  width: 100%;
   margin: 14px 0;
   justify-content: space-between;
 }
@@ -113,7 +129,7 @@ form .button input{
   background: linear-gradient(135deg, #71b7e6, #9b59b6);
 }
 form .button input:hover{
-  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
 }
 @media (max-width: 600px) {
   .container{
@@ -126,11 +142,20 @@ form .button input:hover{
   form .user-details .category{
     width: 100%;
   }
+  form .gender-details .category{
+    width: 100%;
+  }
   .container form .user-details{
     max-height: 300px;
     overflow-y: scroll;
   }
-  .user-details::-webkit-scrollbar{
-    width: 0;
+  .gender-details::-webkit-scrollbar{
+    width: 0%;
+  }
+  form .gender-details .category{
+    display: inline-block;
+    width: 100%;
+    margin: 14px 0;
+    justify-content: space-between;
   }
 }
