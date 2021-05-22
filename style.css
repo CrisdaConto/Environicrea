@@ -25,11 +25,6 @@ body{
     font-weight: 500;
     position: relative;
   }
-  .container .titulo{
-    font-style: 25px;
-    font-weight: 500;
-    position: relative;
-  }
 .container .title::before{
   content: '';
   position: absolute;
@@ -39,15 +34,6 @@ body{
   width: 100%;
   background: linear-gradient(135deg, #71b7e6, #9b59b6);
 }
-.container .titulo::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 3px;
-    width: 100%;
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
-  }
 .container form .user-details{
   display: flex;
   flex-wrap: wrap;
